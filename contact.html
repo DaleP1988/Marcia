@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: teal ! important;
+            color: white;
+            text-align: center;
+        }
+        a {
+            color: black ! important;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body style="background-color:navy">
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h2 class="display-3" style="font-family: 'Cormorant SC', serif ! important">Marcia Milchiker</h2>
+            <!-- <p class="lead">Jumbo helper text</p> -->
+            <hr class="my-2">
+            <!-- <p>More info</p> -->
+            <!-- <p class="lead">
+                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+            </p> -->
+
+            <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Marcia Milchiker</a>
+    </nav> -->
+
+            <!-- A grey horizontal navbar that becomes vertical on small screens -->
+            <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top"> -->
+
+
+            <!-- Links -->
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="nav-link" href="about.html">About Marcia</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="nav-link" href="family.html">The Milchiker Family</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="nav-link" href="ballot.html">Ballot Statement</a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="nav-link" href="contact.html">Contact Marcia and Join the Mailing List</a>
+                </li>
+            </ul>
+
+            <!-- </nav> -->
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container" style="overflow: auto; margin-bottom: 10%; background-color:lightcyan">
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-3" style="background-color:whitesmoke">
+                <img class="img" src="Marcia.png">
+                <img>
+            </div>
+            <div class="col-md-6">
+                <h3 style="font-family: 'Cormorant SC', serif ! important">Contact and Mailing List</h3>
+                <h4>Send Marcia an Email</h4>
+
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="email">Your Name:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Subject:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Click here if you want to sign up for Marcia's mailing list:
+                        </label>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Click here if you want to receive a copy of this message to your email:
+                        </label>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Please fill in all fields completely and click Submit
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <hr>
+                <p>
+                    Just join the mailing list:
+                </p>
+
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="email">Your Name:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                </form>
+                <p>
+                    Please fill in all fields completely and click Submit
+                </p>
+
+                <button type="button" class="btn btn-secondary">Submit</button>
+
+            </div>
+            <div class="col-md-2"></div>
+
+        </div>
+    </div>
+
+    </div>
+
+
+    <div class="footer" style="font-family:'Times New Roman', Times, serif">
+        <p>&copy Copyright 2018 Marcia Milchiker</p>
+    </div>
+
+
+
+</body>
+
+</html>
