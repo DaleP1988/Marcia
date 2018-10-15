@@ -23,27 +23,71 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <style>
+
+ .jumbotron {
+            background-color: rgb(143, 143, 81);
+            height: 170px ! important;
+            padding-top: 10px ! important;
+            padding-bottom: 15px !important;
+            margin-bottom: 0px;
+            border-bottom-style: solid;
+            border-bottom-color: #cccccc;
+            border-bottom-width: .5px;
+        }
+
         .footer {
             position: fixed;
+            padding-top: 10px;
             left: 0;
             bottom: 0;
+            height: 50px;
             width: 100%;
-            background-color: teal ! important;
-            color: white;
-            text-align: center;
+            color: black;
+            background-color: rgb(143, 143, 81) ! important;
+            border-top-style: solid; 
+            border-top-color:#cccccc; 
+            border-top-width: .5px;
+        }
+
+        #main {
+            border-style:solid;
+            border-color: #cccccc;
+            border-width: .75px;
+
         }
         a {
             color: black ! important;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Times New Roman', Times, serif ! important;
+            font-size: 16px ! important;
         }
-        
-        p {
-            font-family: 'Times New Roman', Times, serif;
+        p , li {
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
         }
+        h3 {
+            font-family:  'Cormorant SC', serif ! important;
+        }
+
+          #endorse {
+
+padding-left: 5px;
+margin-left: 10%;
+font-size: 12px !important;
+}
+
+#donate {
+
+padding-left: 5px;
+margin-left: 25%;
+font-size: 12px !important;
+}
+       
+
     </style>
 </head>
 
-<body style="background-color:navy">
+<body style="background-image:url(blue.png)">
 
 
     <div class="jumbotron jumbotron-fluid">
@@ -90,7 +134,7 @@
     <br>
     <br>
 
-    <div class="container" style="overflow: auto; margin-bottom: 10%; background-color:lightcyan">
+    <div id="main" class="container" style="overflow: auto; margin-bottom: 10%; padding-top: 20px; padding-bottom: 20px; background-color:whitesmoke">
         <!-- <h3>
             Ballot Statement
         </h3> -->
@@ -98,10 +142,11 @@
             <div class="col-md-1"></div>
 
             <div class="col-md-9">
-                <h4 style="font-family: 'Times New Roman', Times, serif"> Ballot Statement</h4>
-                <img class="img" src="Marcia.png" href="" style="height:190px; width:155px; float:left"></img>
-                <p>
-                    Marcia Milchiker Governing Board Member, South Orange County Community College District Board of Trustees, Trustee Area 5
+            
+                <img class="img" src="Marcia.png" href="" style="height:260px; width:200px; float:left; margin-right: 40px; padding-bottom: 20px;"></img>
+                <h2 style="font-family:'Cormorant SC', serif ! important; margin-left:30%; margin-top: 5%"> Ballot Statement</h2>
+                <p style="padding-top: 5% ! important">
+                    Marcia Milchiker Governing Board Member <br> South Orange County Community College District <br> Board of Trustees Trustee Area 5
                 </p>
             </div>
             <div class="col-md-2"></div>
@@ -111,32 +156,36 @@
                 <div class="col-md-9" style="background-color:whitesmoke">
 
 
-                    <p>
+                    <p style="margin-top: 20px">
                         When you elected me to the South Orange County Community College District’s Governing Board, I pledged that education was
                         my top priority. I’ve kept my pledge.
                     </p>
+                    <br>
                     <p>
                         I listen judiciously and work tirelessly to ensure extraordinary educational value.
 
 
                     </p>
+                    <br>
                     <p>
                         Through outstanding conservative fiscal management, we are debt free and have no unfunded public employee pension liability.
 
                     </p>
+                    <br>
                     <p>
 
                         Our nursing program is ranked # 1 in the nation.
                     </p>
+                    <br>
                     <p>
                         We have increased our superb class offerings and programs. Our colleges have the highest transfer rates among all community
                         colleges.
 
                     </p>
-
-                    <h4>
+                    <br>
+                    <h5 style="font-family: 'Cormorant SC', serif ! important" >
                         I Instituted:
-                    </h4>
+                    </h5>
 
                     <ul>
                         <li>
@@ -170,15 +219,16 @@
                             Internet and Telephone Registration/ Library Automation
                         </li>
                     </ul>
+                    <br>
                     <p>
-                        During my tenure, we funded and built two world-class libraries, two student services centers, two child development facilities,
-                        reclaimed water irrigation systems, classrooms and physical education buildings.
+                        During my tenure, we funded and built two world-class libraries, two student services centers, two child development facilities, reclaimed water irrigation systems, classrooms and physical education buildings.
                     </p>
                     <p>
 
                         Please give me your vote. As always, I pledge to use my experience and perspective to keep our colleges on track.
 
                     </p>
+                    <br>
                     <p>
                         Thank you,
 
@@ -191,10 +241,10 @@
                         <a href="www.Milchiker.com">www.Milchiker.com</a>
                     </p>
 
-                    <button type="button" class="btn btn-secondary">
+                    <button type="button" id="donate" class="btn btn-secondary">
                             <i class=   "fas fa-donate fa-2x"> </i> Click here to Donate!
                     </button>
-                    <button type="button" class="btn btn-secondary">
+                    <button type="button" id = "endorse" class="btn btn-secondary">
                             <i class=  "far fa-handshake fa-2x"> </i> Click here to Endorse!
                     </button>
 
@@ -206,8 +256,8 @@
     </div>
 
 
-    <div class="footer" style="font-family:'Times New Roman', Times, serif">
-        <p>&copy Copyright 2018 Marcia Milchiker</p>
+    <div class="footer" >
+        <p style="font-family:'Times New Roman', Times, serif; text-align:center">&copy Copyright 2018 Marcia Milchiker</p>
     </div>
 
 

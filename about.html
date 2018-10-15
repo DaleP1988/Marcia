@@ -25,24 +25,89 @@
         crossorigin="anonymous">
 
     <style>
+      .jumbotron {
+            background-color: rgb(143, 143, 81);
+            height: 180px ! important;
+            padding-top: 10px ! important;
+            padding-bottom: 15px !important;
+            margin-bottom: 0px;
+            border-bottom-style: solid;
+            border-bottom-color: #cccccc;
+            border-bottom-width: .5px;
+        }
+
         .footer {
             position: fixed;
+            padding-top: 10px;
             left: 0;
             bottom: 0;
+            height: 50px;
             width: 100%;
-            background-color: teal ! important;
-            color: white;
-            text-align: center;
+            color: black;
+            background-color: rgb(143, 143, 81) ! important;
+            border-top-style: solid; 
+            border-top-color:#cccccc; 
+            border-top-width: .5px;
+        }
+
+        #main {
+            border-style:solid;
+            border-color: #cccccc;
+            border-width: .75px;
+
+        }
+
+        .container {
+            padding-top: 20px;
+           padding-bottom: 20px;
+
         }
 
         a {
             color: black ! important;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Times New Roman', Times, serif !important;
+            font-size: 16px ! important;
         }
+
+        p,
+        li {
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;    
+        }
+
+        li {
+            line-height: 25px !important;
+        }
+
+        h3 {
+            font-family: 'Cormorant SC', serif ! important;
+        }
+
+        h5 {
+            font-family: 'Cormorant SC', serif  ! important;
+            font-size: 16px !important;
+            font-weight:bold ! important;
+        }
+
+        #endorse {
+
+            padding-left: 5px;
+            margin-left: 10%;
+            font-size: 12px !important;
+        }
+
+        #donate {
+
+            padding-left: 5px;
+            margin-left: 25%;
+            font-size: 12px !important;
+        }
+
     </style>
 </head>
 
-<body style="background-color:navy">
+<body style="background-image:url(blue.png)">
 
 
     <div class="jumbotron jumbotron-fluid">
@@ -89,13 +154,14 @@
     <br>
     <br>
 
-    <div class="container" style="overflow: auto; margin-bottom: 10%; background-color:lightcyan">
+    <div id="main" class="container" style="overflow: auto; margin-bottom: 5%; background-color:whitesmoke">
 
         <div class="row">
-            <div class="col-md-12">
-                <h2>
+            <div class="col-md-1" ></div>
+            <div class="col-md-11">
+                <h3 style="padding-bottom:30px">
                     About Marcia Milchiker
-                </h2>
+                </h3>
 
             </div>
         </div>
@@ -104,39 +170,41 @@
             <div class="col-md-1"></div>
             <div class="col-md-2">
 
-                <img class="img" src="Marcia.png" href="" style="height:150px; width:150px"></img>
+                <img class="img" src="Marcia.png" href="" style="height:180px; width:155px"></img>
 
             </div>
-            <div class="col-md-7" style="background-color:whitesmoke">
+            <div class="col-md-8" style="background-color:whitesmoke">
 
-                <h4>
+                <h5>
                     Accomplishments:
-                </h4>
-                <ol class="list-inline">
-                    <li class="list-inline-item">
+                </h5>
+                <ul>
+
+                    <li>
+                        Professor of Biology, Santa Ana College
+                    </li>
+                    <li>
+                        Research Biologist, Orthopedic Surgery, Cleveland Clinic Hospital
+                    </li>
+                    <li>
+                        Founder of Orange County Community College Legislative Task Force
+                    </li>
+                    <li>
+                        Saved our Emeritus Institutes at Saddleback and Irvine Valley Colleges
+                    </li>
+                    <li>
+                        Founder and President, California Elected Women's Association for Education and Research, Orange County
+                    </li>
+
+                    <li>
                         Governing Board Member, South Orange County Community College District, Trustee Area 5. Served as President, Vice President
                         and Clerk
                     </li>
-                    <li class="list-inline-item">
-                        Professor of Biology, Santa Ana College
-                    </li>
-                    <li class="list-inline-item">
-                        Research Biologist, Orthopedic Surgery, Cleveland Clinic Hospital
-                    </li>
-                    <li class="list-inline-item">
-                        Founder of Orange County Community College Legislative Task Force
-                    </li>
-                    <li class="list-inline-item">
-                        Founder and President, California Elected Women's Association for Education and Research, Orange County
-                    </li>
-                    <li class="list-inline-item">
-                        Saved our Emeritus Institutes at Saddleback and Irvine Valley Colleges
-                    </li>
-                </ol>
+                </ul>
             </div>
             <div class="row">
                 <div class="col-md-1"></div>
-                <div class="col-md-8">
+                <div class="col-md-10">
 
                     <p>
                         Ms. Milchiker is one of the founders of the Orange County Community Colleges Legislative Task Force and wrote the initial
@@ -170,17 +238,17 @@
                         Southwestern Medical Group and the Cleveland Clinic Hospital in Ohio.
 
                     </p>
-                    <p>
+                    <p style="padding-bottom: 20px">
                         Ms. Milchiker and her husband of 37 years, Dr. Ben Milchiker, reside in Laguna Hills. They have 3 grown sons. Area 5 includes
                         Laguna Woods, Laguna Niguel and parts of Laguna Hills.
 
                     </p>
 
-                    <button type="button" class="btn btn-secondary">
-                        <i class="fas fa-donate fa-2x"> </i>Click here to Donate!
+                    <button type="button" id="donate" class="btn btn-secondary">
+                        <i class="fas fa-donate fa-2x"> </i>      Click here to Donate!
                     </button>
-                    <button type="button" class="btn btn-secondary">
-                        <i class="far fa-handshake fa-2x"> </i>Click here to Endorse!
+                    <button type="button" id="endorse" class="btn btn-secondary">
+                        <i class="far fa-handshake fa-2x"> </i>     Click here to Endorse!
                     </button>
                 </div>
             </div>
@@ -189,8 +257,8 @@
         </div>
 
 
-        <div class="footer" style="font-family:'Times New Roman', Times, serif">
-            <p>&copy Copyright 2018 Marcia Milchiker</p>
+        <div class="footer" >
+            <p style="text-align: center !important;  font-family: 'Times New Roman', Times, serif !important">&copy Copyright 2018 Marcia Milchiker</p>
         </div>
 
 

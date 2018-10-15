@@ -23,23 +23,69 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
     <style>
+
+   .jumbotron {
+            background-color: rgb(143, 143, 81);
+            height: 170px ! important;
+            padding-top: 10px ! important;
+            padding-bottom: 15px !important;
+            margin-bottom: 0px;
+            border-bottom-style: solid;
+            border-bottom-color: #cccccc;
+            border-bottom-width: .5px;
+        }
+
         .footer {
             position: fixed;
+            padding-top: 10px;
             left: 0;
             bottom: 0;
+            height: 50px;
             width: 100%;
-            background-color:teal ! important;
-            color: white;
-            text-align: center;
+            color: black;
+            background-color: rgb(143, 143, 81) ! important;
+            border-top-style: solid; 
+            border-top-color:#cccccc; 
+            border-top-width: .5px;
+        }
+
+        #main {
+            border-style:solid;
+            border-color: #cccccc;
+            border-width: .75px;
+
         }
         a {
             color: black ! important;
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Times New Roman', Times, serif !important;
         }
+        p {
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        h3 {
+            font-family:  'Cormorant SC', serif ! important;
+        }
+
+             #endorse {
+
+padding-left: 5px;
+margin-left: 10%;
+font-size: 12px !important;
+}
+
+#donate {
+
+padding-left: 5px;
+margin-left: 25%;
+font-size: 12px !important;
+}
+
     </style>
 </head>
 
-<body style="background-color:navy">
+<body style="background-image:url(blue.png)">
 
 
     <div class="jumbotron jumbotron-fluid">
@@ -86,18 +132,18 @@
     <br>
     <br>
 
-    <div class="container" style="overflow: auto; margin-bottom: 10%; background-color:lightcyan">
+    <div id="main" class="container" style="overflow: auto; margin-bottom: 10%; padding: 20px; background-color:whitesmoke">
 
         <div class="row">
             <div class="col-md-4">
 
-                <img class="img" src="Marcia.png" href="" style="height:150px; width:150px"></img>
+                <img class="img" src="Marcia.png" href="" style="height:200px; width:180px"></img>
 
             </div>
             <div class="col-md-8" style="background-color:whitesmoke">
-                <h2>
+                <h3>
                     Welcome to Milchiker.com!
-                </h2>
+                </h3>
                 <p>
                     This page contains information about Marcia Milchiker and the Milchiker family. Marcia is running for reelection in 2014
                     for her position as Trustee of the South Orange County Community College District, which contains Saddleback
@@ -117,10 +163,10 @@
 
                 </p>
 
-                <button type="button" class="btn btn-secondary">
+                <button type="button" id="donate" class="btn btn-secondary">
                         <i class=   "fas fa-donate fa-2x"> </i>  Click here to Donate!
                 </button>
-                <button type="button" class="btn btn-secondary">
+                <button type="button" id="endorse" class="btn btn-secondary">
                         <i class=  "far fa-handshake fa-2x"> </i>  Click here to Endorse!
                 </button>
 
@@ -130,8 +176,8 @@
     </div>
 
 
-    <div class="footer" style="font-family:'Times New Roman', Times, serif">
-        <p>&copy Copyright 2018 Marcia Milchiker</p>
+    <div class="footer" >
+        <p style="font-family:'Times New Roman', Times, serif;  text-align: center;">&copy Copyright 2018 Marcia Milchiker</p>
     </div>
 
 
